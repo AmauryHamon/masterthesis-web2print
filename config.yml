@@ -2,32 +2,35 @@
 ### Configuration 
 
 # Le thème à utiliser
-theme: "esadpyrenees"
+theme: "amauryhamon"
 
 # Le titre du document
-title: Printing in Relation <br class='breakprint'>to Graphic&nbsp;Art # &nbsp; = espace insécable, <br class="breakprint"> produit un saut uniquement en version print
+title: Browsing, Gathering, Contextualizing	 # &nbsp; = espace insécable, <br class="breakprint"> produit un saut uniquement en version print
 
 # Le sous-titre éventuel du document
-subtitle: ""
+subtitle: "Online tools for collaborative research and knowledge-making, cultivating alternative creative practices"
 
 # Votre nom
-name: George French
+name: Amaury Hamon
 
 # L’année, par ex. : 2021 – 2022
-year: 2021 – 2022 
+year: 2023 – 2024 
 
 # Votre diplôme, par ex. : DNA Design
-diploma: DNSEP Design
+diploma: Master HES-So en Design
 
 # Le mention du diplôme, par ex. : Mention Design graphique Multimédia
-mention: Mention Design <br class='breakprint'>graphique Multimédia # <br class="breakprint"> produit un saut uniquement en version print
+mention: Orientation Master en Media Design # <br class="breakprint"> produit un saut uniquement en version print
+
+# votre école
+ecole: Haute École d'art et de design – Genève (HEAD)
 
 # Votre pôle éventuel, par ex. : Pôle Nouveaux médias
 # Pôle Image, édition &amp<br class="breakprint"> dessin de caractères
-pole: Pôle Nouveaux médias
+pole: 
 
 # Le nom du fichier pdf généré, par ex. : titre-du-document--prenom-nom.pdf
-pdf: ""
+pdf: "browsing-gathering-contextualizing--amaury-hamon"
 
 # Structure du contenu (= sommaire)
 parts:
@@ -39,7 +42,7 @@ parts:
     file: content/text/1.intro.md
     template: default
   
-  - title: Art in Printing
+  - title: Exploring Visual Research Online
     file: content/text/2.artinprinting.md
     template: default
    
@@ -55,22 +58,59 @@ parts:
     file: content/text/5.conclusion.md
     template: default
    
-  - title: Annexes
+  - title: Appendices
     file: content/text/6.annexes.md
     template: appendices
    
-  - title: Entretiens
-    file: content/text/7.entretiens.md
+  # - title: Interview
+  #   file: content/text/7.1.entretiens.md
+  #   template: interview
+  # create a parts Interview and inside, nest each entry with their title, template and file
+  - title: "Interview: Gemma Copeland"
+    file: content/text/7.itw-gemma-copeland.md
     template: interview
-   
-  - title: Glossaire
+  - title: "Interview: Lucas Erin"
+    file: content/text/7.itw-lucas-erin.md
+    template: interview
+  - title: "Interview: Florian Hilt"
+    file: content/text/7.itw-florian-hilt.md
+    template: interview
+  - title: "Interview: Frederik Mahler-Andersen"
+    file: content/text/7.itw-frederik-mahler-andersen.md
+    template: interview
+  - title: "Interview: Jonas Pelzer"
+    file: content/text/7.itw-jonas-pelzer.md
+    template: interview
+  - title: "Interview: Émilie Pillet"
+    file: content/text/7.itw-emilie-pillet.md
+    template: interview
+  - title: "Interview: Daniel Robert Prieto"
+    file: content/text/7.itw-daniel-robert-prieto.md
+    template: interview
+  - title: "Interview: Aurélie Vial"
+    file: content/text/7.itw-aurelie-vial.md
+    template: interview
+  - title: "Interview: Baker Wardlaw"
+    file: content/text/7.itw-baker-wardlaw.md
+    template: interview
+
+
+  # - title: "Interview: Lucas Erin"
+  #   file: content/text/7.1.entretiens.md
+  #   template: interview
+
+  # - title: "Interview: Aurélie Vial"
+  #   file: content/text/7.1.entretiens.md
+  #   template: interview
+
+  - title: Glossary
     file: content/text/8.glossaire.md
     template: references
    
-  - title: Références
+  - title: References
     file: content/text/9.references.md
     template: references
    
-  - title: Remerciements
+  - title: Acknowledgements
     file: content/text/10.remerciements.md
     template: thanks
