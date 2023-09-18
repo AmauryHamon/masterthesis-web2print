@@ -24,14 +24,14 @@ tuteur:
 year: 2023 – 2024 
 
 # Votre diplôme, par ex. : DNA Design
-diploma: Master of Art HES-SO in Design
+diploma: Master Media Design
 
 # Le mention du diplôme, par ex. : Mention Design graphique Multimédia
-mention: Orientation in Media Design # <br class="breakprint"> produit un saut uniquement en version print
+# mention: Orientation in Media Design # <br class="breakprint"> produit un saut uniquement en version print
 
 # votre école
 ecole: 
-  name: Haute École d'art et de design – Genève (HEAD)
+  name: HEAD – Geneva
   link: https://www.hesge.ch/head/
 
 # Votre pôle éventuel, par ex. : Pôle Nouveaux médias
