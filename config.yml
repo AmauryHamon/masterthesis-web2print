@@ -5,7 +5,7 @@
 theme: "amauryhamon"
 
 # Le titre du document
-title: Browsing, Gathering, Contextualizing	 # &nbsp; = espace insécable, <br class="breakprint"> produit un saut uniquement en version print
+title: Browsing, Gathering, Contextualizing	(working title) # &nbsp; = espace insécable, <br class="breakprint"> produit un saut uniquement en version print
 
 # Le sous-titre éventuel du document
 subtitle: "Online tools for collaborative research and knowledge-making, cultivating alternative creative practices"
@@ -122,4 +122,8 @@ parts:
    
   - title: Acknowledgements
     file: content/text/10.remerciements.md
+    template: thanks
+
+  - title: Impressum
+    file: content/text/11.impressum.md
     template: thanks
