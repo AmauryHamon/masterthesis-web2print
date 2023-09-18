@@ -53,7 +53,7 @@ Sommaire :
   /* largeur des notes de côté */
   --sn-width: 15rem;
   /* couleur d’accentuation */
-  --accentcolor: #ff6347;
+  --accentcolor: orangered;
   /* largeur max. des textes */
   --maxwidth: 46rem;
 }
