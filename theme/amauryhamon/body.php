@@ -23,18 +23,15 @@
     <!-- les méta-données -->
     <div class="meta">
         <!-- Votre nom -->
+        <div class="meta-data">
+            <p>
+                <a target="_blank" href="<?= $ecole['link'] ?>"><?= $ecole['name'] ?></a><br>
+                <?= $diploma ?> <br> 
+            </p>
+        </div>
         <div class="meta-name">
             <?= $student['thesis']?> by <a href="<?=$student['link']?>" target="_blank"><?= $student['name']?></a><br>    
             Tutored by <a href="<?=$tuteur['link']?>" target="_blank"><?= $tuteur['name']?></a>    
-        </div>
-        <div class="meta-data">
-            <!-- Votre diplôme, option et mention -->
-            <p>
-                <!-- Votre école -->
-                <a target="_blank" href="<?= $ecole['link'] ?>"><?= $ecole['name'] ?></a><br>
-                <?= $diploma ?> <br>
-                
-            </p>
         </div>
         <!-- l’année YYYY – YYYY  -->
         <div class="meta-year"><?= $year ?></div>
@@ -47,6 +44,7 @@
         <a href="?print" title="Web to print">Print</a>
         <!-- Modifier l’URL dans config.php -->
         <a href="<?= $pdf ?>">Download</a>
+        <a href="https://github.com/AmauryHamon/masterthesis-web2print/issues" target="_blank">Edit</a>
     </nav>
 </header>
 
