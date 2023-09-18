@@ -7,7 +7,7 @@
 
     <!-- le titre courant (version print) -->
     <div class="runningtitle">
-        <div><?= $name ?></div>
+        <div><?= $student['name'] ?></div>
         <div><?= $title ?></div>
     </div>
 
@@ -25,18 +25,17 @@
         <!-- l’année YYYY – YYYY  -->
         <div class="meta-year"><?= $year ?></div>
         <!-- Votre nom -->
-        <div class="meta-name"><?= $name ?></div>
+        <div class="meta-name">
+            <?= $student['thesis']?> by <a href="<?=$student['link']?>" target="_blank"><?= $student['name']?></a><br>    
+            Tutored by <a href="<?=$tuteur['link']?>" target="_blank"><?= $tuteur['name']?></a>    
+        </div>
         <div class="meta-data">
         <!-- Votre diplôme, option et mention -->
         <p>
+            <!-- Votre école -->
+            <a target="_blank" href="<?= $ecole['link'] ?>"><?= $ecole['name'] ?></a><br>
             <?= $diploma ?> <br>
             <?= $mention ?> 
-        </p>
-        <p>
-            <!-- Votre école -->
-            <?= $ecole ?>
-            <!-- Votre pôle éventuel -->
-            <?= $pole ?>
         </p>
         </div>
     </div>
