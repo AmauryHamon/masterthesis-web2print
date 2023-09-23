@@ -68,7 +68,7 @@ parts:
     template: default
    
   - title: Appendices
-    file: content/text/6.annexes.md
+    file: content/text/6.demo-images.md
     template: appendices
    
   # - title: Interview
@@ -127,3 +127,7 @@ parts:
   - title: Impressum
     file: content/text/11.impressum.md
     template: thanks
+
+  - title: Demo
+    file: content/text/12.demo.md
+    template: default

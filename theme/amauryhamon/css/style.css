@@ -178,6 +178,10 @@ hr{
   margin: 0;
   padding: 0;
 }
+
+.nav-appendices + .nav-interview {margin-top: 1em}
+.nav-interview + .nav-references {margin-top: 1em}
+
 /* #index : le sommaire, une fois cloné */
 #index {
   position: sticky;
