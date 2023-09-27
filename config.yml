@@ -5,7 +5,7 @@
 theme: "amauryhamon"
 
 # Le titre du document
-title: Browsing, Gathering, Contextualizing	(working title) # &nbsp; = espace insécable, <br class="breakprint"> produit un saut uniquement en version print
+title: Browsing, Gathering, Contextualizing, Gardening # &nbsp; = espace insécable, <br class="breakprint"> produit un saut uniquement en version print
 
 # Le sous-titre éventuel du document
 subtitle: "Online tools for collaborative research and knowledge-making, cultivating alternative creative practices"
@@ -43,7 +43,7 @@ pdf: "browsing-gathering-contextualizing--amaury-hamon"
 
 # Structure du contenu (= sommaire)
 parts:
-  - title: Prefatory Note
+  - title: Abstract
     file : content/text/0.prefatorynote.md
     template : default
   
@@ -51,15 +51,15 @@ parts:
     file: content/text/1.intro.md
     template: default
   
-  - title: Exploring Visual Research Online
+  - title: Part 1
     file: content/text/2.artinprinting.md
     template: default
    
-  - title: Pictorial Composition
+  - title: Part 2
     file: content/text/3.pictorial.md
     template: default
    
-  - title: Type Composition
+  - title: Part 3
     file: content/text/4.type.md
     template: default
    
