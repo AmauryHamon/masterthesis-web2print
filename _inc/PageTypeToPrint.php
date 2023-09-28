@@ -140,6 +140,13 @@
       if($template != "default"){
         $content = "<div class='runningtitle'><div>$name</div><div>$part_title</div></div>\n\n$content";
       }
+      if($template == "interview"){
+        //if interview template has an audio file, add audio player
+        if(array_key_exists("audio", $part)){
+          $audio = $part["audio"];
+          $content = "<h2>$part_title</h2>\n\n<audio controls src='$audio'></audio>\n\n$content";
+        }
+      }
       if($template == "appendices" || $template == "autofolder"){
         $content = "<h2>$part_title</h2><div class='content' markdown=1>\n\n$content\n\n</div>";
       }

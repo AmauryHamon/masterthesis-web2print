@@ -84,6 +84,7 @@ parts:
   - title: "Lucas Erin"
     file: content/text/7.itw-lucas-erin.md
     template: interview
+    audio: content/audio/itw-lucas-erin.mp3
   - title: "Florian Hilt"
     file: content/text/7.itw-florian-hilt.md
     template: interview
@@ -102,6 +103,7 @@ parts:
   - title: "Aurélie Vial"
     file: content/text/7.itw-aurelie-vial.md
     template: interview
+    audio: content/audio/itw-aurelie-vial.mp3
   - title: "Baker Wardlaw"
     file: content/text/7.itw-baker-wardlaw.md
     template: interview
