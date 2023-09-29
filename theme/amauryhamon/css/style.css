@@ -366,6 +366,9 @@ main blockquote {
   margin-bottom: 1em;
   margin-left: 0;
 }
+@media screen and (max-width:100rem) {
+  .glossary { columns: 2;}
+}
 @media screen and (max-width:30rem) {
   .glossary { columns: 1;}
 }
@@ -379,9 +382,13 @@ main blockquote {
   break-inside: avoid;
   max-width: 28em;
 }
+@media screen and (max-width:100rem) {
+  .columns { columns: 2;}
+}
 @media screen and (max-width:30rem) {
   .columns { columns: 1;}
 }
+
 /* ------------------------------------------------------------------------ Images de notes */
 /* footnotes */
 .imagenote {
