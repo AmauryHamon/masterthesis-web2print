@@ -1,8 +1,8 @@
 @media print {
 
   @page {
-    size: 100mm 200mm;
-    margin: 24mm 8mm 8mm 8mm;
+    size: 210mm 297mm;
+    margin: 3.2cm 1cm 1.2cm 7.5cm;
 
     @top-left-corner {
       content: element(folioRunning);
@@ -19,7 +19,7 @@
   }  
 
   @page cover {
-    margin: 8mm 8mm 8mm 8mm;
+    margin: 1cm 1cm 1.2cm 1cm;
     
     @top-left-corner {
       display: none;
@@ -34,15 +34,15 @@
   }
 
   @page appendices {
-    margin: 24mm 8mm 8mm 16mm;
+    margin: 2.2cm 1cm .8cm 7.5cm;
   }
 
   @page references {
-    margin: 24mm 8mm 8mm 8mm;
+    margin: 3.2cm 1cm 1.2cm 7.5cm;
   }
 
   @page interview {
-    margin: 24mm 8mm 8mm 8mm;
+    margin: 3.2cm 1cm 1.2cm 7.5cm;
   }
 
   
