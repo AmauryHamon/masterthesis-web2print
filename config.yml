@@ -2,7 +2,7 @@
 ### Configuration 
 
 # Le thème à utiliser
-theme: "amauryhamon"
+theme: "booklet-ah"
 
 # Le titre du document
 title: Browsing, Gathering, Contextualizing, Gardening # &nbsp; = espace insécable, <br class="breakprint"> produit un saut uniquement en version print
@@ -44,27 +44,33 @@ pdf: "browsing-gathering-contextualizing--amaury-hamon"
 # Structure du contenu (= sommaire)
 parts:
   - title: Abstract
-    file : content/text/0.prefatorynote.md
+    # file : content/text/0.prefatorynote.md
+    pad: https://mypads2.framapad.org/p/abstract-i61m3t9e2
     template : default
   
   - title: Introduction
-    file: content/text/1.intro.md
+    # file: content/text/1.intro.md
+    pad: https://mypads2.framapad.org/p/introduction-vw1lrt9tb
     template: default
   
   - title: Part 1
-    file: content/text/2.part1.md
+    # file: content/text/2.part1.md
+    pad: https://mypads2.framapad.org/p/part-1-m41m9t9wu
     template: default
    
   - title: Part 2
-    file: content/text/3.part2.md
+    # file: content/text/3.part2.md
+    pad: https://mypads2.framapad.org/p/part-2-6a1mat9bx
     template: default
    
   - title: Part 3
-    file: content/text/4.part3.md
+    # file: content/text/4.part3.md
+    pad: https://mypads2.framapad.org/p/part-3-ke1mbt9me
     template: default
    
   - title: Conclusion
-    file: content/text/5.conclusion.md
+    # file: content/text/5.conclusion.md
+    pad: https://mypads2.framapad.org/p/conclusion-ku1mct9v8
     template: default
    
   - title: Appendices
@@ -77,40 +83,50 @@ parts:
   # create a parts Interview and inside, nest each entry with their title, template and file
   - title: "Interviews"
     template: default
-    file: content/text/7.itw-intro.md
+    # file: content/text/7.itw-intro.md
+    pad: https://mypads2.framapad.org/p/07-interview-e91qkt9mg
   - title: "Gemma Copeland"
-    file: content/text/7.itw-gemma-copeland.md
+    # file: content/text/7.itw-gemma-copeland.md
+    pad: https://mypads2.framapad.org/p/07-interview-gemma-copeland-at1qot9pf
     template: interview
     audio: content/audio/itw-gemma-copeland.mp3
   - title: "Lucas Erin"
-    file: content/text/7.itw-lucas-erin.md
+    # file: content/text/7.itw-lucas-erin.md
+    pad: https://mypads2.framapad.org/p/07-interview-lucas-erin-011qmt90d
     template: interview
     audio: content/audio/itw-lucas-erin.mp3
   - title: "Florian Hilt"
-    file: content/text/7.itw-florian-hilt.md
+    # file: content/text/7.itw-florian-hilt.md
+    pad: https://mypads2.framapad.org/p/07-interview-florian-hilt-zt1qpt9s7
     template: interview
     audio: content/audio/itw-florian-hilt.mp3
   - title: "Frederik Mahler-Andersen"
-    file: content/text/7.itw-frederik-mahler-andersen.md
+    # file: content/text/7.itw-frederik-mahler-andersen.md
+    pad: https://mypads2.framapad.org/p/07-interview-frederik-mahler-andersen-k61qwt9vb
     template: interview
     audio: content/audio/itw-fm-a.mp3
   - title: "Jonas Pelzer"
-    file: content/text/7.itw-jonas-pelzer.md
+    # file: content/text/7.itw-jonas-pelzer.md
+    pad: https://mypads2.framapad.org/p/07-interview-jonas-pelzer-nn1qvt9hg
     template: interview
   - title: "Émilie Pillet"
-    file: content/text/7.itw-emilie-pillet.md
+    # file: content/text/7.itw-emilie-pillet.md
+    pad: https://mypads2.framapad.org/p/07-interview-emilie-pillet-jv1qtt9aq
     template: interview
     audio: content/audio/itw-emilie-pillet.mp3
   - title: "Daniel Robert Prieto"
-    file: content/text/7.itw-daniel-robert-prieto.md
+    # file: content/text/7.itw-daniel-robert-prieto.md
+    pad: https://mypads2.framapad.org/p/07-interview-daniel-rp-o71qut9k3
     audio: content/audio/itw-dani-rp.mp3
     template: interview
   - title: "Aurélie Vial"
-    file: content/text/7.itw-aurelie-vial.md
+    # file: content/text/7.itw-aurelie-vial.md
+    pad: https://mypads2.framapad.org/p/07-interview-arelie-vial-v01qnt98k
     template: interview
     audio: content/audio/itw-aurelie-vial.mp3
   - title: "Baker Wardlaw"
-    file: content/text/7.itw-baker-wardlaw.md
+    # file: content/text/7.itw-baker-wardlaw.md
+    pad: https://mypads2.framapad.org/p/07-interview-baker-wardlaw-hd1qqt9dm
     template: interview
     audio: content/audio/itw-baker-wardlaw.mp3
 
@@ -125,17 +141,21 @@ parts:
   #   template: interview
 
   - title: Glossary
-    file: content/text/8.glossaire.md
+    # file: content/text/8.glossaire.md
+    pad: https://mypads2.framapad.org/p/glossary-5x1mdt9ff
     template: references
    
   - title: References
-    file: content/text/9.references.md
+    # file: content/text/9.references.md
+    pad: https://mypads2.framapad.org/p/bibliography-zx1mft90n
     template: references
    
   - title: Acknowledgements
-    file: content/text/10.remerciements.md
+    # file: content/text/10.remerciements.md
+    pad: https://mypads2.framapad.org/p/acknowledgements-r31mgt92o
     template: thanks
 
   - title: Impressum
-    file: content/text/11.impressum.md
+    # file: content/text/11.impressum.md
+    pad: https://mypads2.framapad.org/p/impressum-yl1mlt9hj
     template: thanks
