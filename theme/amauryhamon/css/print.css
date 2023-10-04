@@ -30,7 +30,15 @@
   }
 
   @page sommaire {
-       
+    margin: 8mm 8mm 8mm 20mm;
+
+    @top-left-corner {
+      display: none;
+    }
+    @top-right{
+      display: none;
+    }
+
   }
 
   @page appendices {
@@ -72,14 +80,21 @@
     height: calc(var(--pagedjs-height) - var(--pagedjs-margin-bottom) - var(--pagedjs-margin-top));
     min-height: 0; */
   }
-  
+  #header h1 {
+    font-size: 3em;
+  }
+  #header h2 {
+    font-size: 1.5em;
+  }
   .meta {
     display: grid;
     grid-gap: var(--spacer);
-    grid-template-columns: 4fr 4fr 4fr;
+    grid-template-columns: 1fr;
     margin-top: 2rem;
   }
-
+  .meta-data, .meta-name, .meta-year, .meta-data p, .meta-name p, .meta-year p {
+    margin-bottom: 0;
+  }
   /* header nav = Lire / imprimer / télécharger */
   #header nav { display: none; } 
 
@@ -377,14 +392,14 @@
 
   #list-toc-generated .toc-element-level-1 {
     font-weight: bold;
-    margin-top: 1em;
+    /* margin-top: 1em; */
   }
 
   #list-toc-generated .toc-element-level-2 {
     margin-left: 20px;
   }
   #list-toc-generated .toc-element-level-2 a::before {
-    margin-left: calc(-4em - 40px);
+    margin-left: calc(-4em - 20px);
   }
 
 
