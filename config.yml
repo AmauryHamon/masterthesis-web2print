@@ -5,7 +5,7 @@
 theme: "booklet-ah"
 
 # Le titre du document
-title: Browsing, Gathering, Contextualizing, Gardening # &nbsp; = espace insécable, <br class="breakprint"> produit un saut uniquement en version print
+title: Pass the information, Extend the Knowledge # &nbsp; = espace insécable, <br class="breakprint"> produit un saut uniquement en version print
 
 # Le sous-titre éventuel du document
 subtitle: "Online tools for collaborative research and knowledge-making, cultivating alternative creative practices"
@@ -69,8 +69,8 @@ parts:
     template: default
    
   - title: Conclusion
-    # file: content/text/5.conclusion.md
-    pad: https://mypads2.framapad.org/p/conclusion-ku1mct9v8
+    file: content/text/5.conclusion.md
+    # pad: https://mypads2.framapad.org/p/conclusion-ku1mct9v8
     template: default
    
   - title: Appendices
@@ -81,52 +81,62 @@ parts:
   #   file: content/text/7.1.entretiens.md
   #   template: interview
   # create a parts Interview and inside, nest each entry with their title, template and file
+
   - title: "Interviews"
-    template: default
-    # file: content/text/7.itw-intro.md
+    # template: default
+    file: content/text/7.itw-intro.md
     pad: https://mypads2.framapad.org/p/07-interview-e91qkt9mg
+  
   - title: "Gemma Copeland"
-    # file: content/text/7.itw-gemma-copeland.md
-    pad: https://mypads2.framapad.org/p/07-interview-gemma-copeland-at1qot9pf
+    file: content/text/7.itw-gemma-copeland.md
+    # pad: https://mypads2.framapad.org/p/07-interview-gemma-copeland-at1qot9pf
     template: interview
     audio: content/audio/itw-gemma-copeland.mp3
+  
   - title: "Lucas Erin"
-    # file: content/text/7.itw-lucas-erin.md
-    pad: https://mypads2.framapad.org/p/07-interview-lucas-erin-011qmt90d
+    file: content/text/7.itw-lucas-erin.md
+    # pad: https://mypads2.framapad.org/p/07-interview-lucas-erin-011qmt90d
     template: interview
     audio: content/audio/itw-lucas-erin.mp3
+  
   - title: "Florian Hilt"
-    # file: content/text/7.itw-florian-hilt.md
-    pad: https://mypads2.framapad.org/p/07-interview-florian-hilt-zt1qpt9s7
+    file: content/text/7.itw-florian-hilt.md
+    # pad: https://mypads2.framapad.org/p/07-interview-florian-hilt-zt1qpt9s7
     template: interview
     audio: content/audio/itw-florian-hilt.mp3
+  
   - title: "Frederik Mahler-Andersen"
-    # file: content/text/7.itw-frederik-mahler-andersen.md
-    pad: https://mypads2.framapad.org/p/07-interview-frederik-mahler-andersen-k61qwt9vb
+    file: content/text/7.itw-frederik-mahler-andersen.md
+    # pad: https://mypads2.framapad.org/p/07-interview-frederik-mahler-andersen-k61qwt9vb
     template: interview
     audio: content/audio/itw-fm-a.mp3
+  
   - title: "Jonas Pelzer"
-    # file: content/text/7.itw-jonas-pelzer.md
-    pad: https://mypads2.framapad.org/p/07-interview-jonas-pelzer-nn1qvt9hg
+    file: content/text/7.itw-jonas-pelzer.md
+    # pad: https://mypads2.framapad.org/p/07-interview-jonas-pelzer-nn1qvt9hg
     template: interview
+  
   - title: "Émilie Pillet"
-    # file: content/text/7.itw-emilie-pillet.md
-    pad: https://mypads2.framapad.org/p/07-interview-emilie-pillet-jv1qtt9aq
+    file: content/text/7.itw-emilie-pillet.md
+    # pad: https://mypads2.framapad.org/p/07-interview-emilie-pillet-jv1qtt9aq
     template: interview
     audio: content/audio/itw-emilie-pillet.mp3
+  
   - title: "Daniel Robert Prieto"
-    # file: content/text/7.itw-daniel-robert-prieto.md
-    pad: https://mypads2.framapad.org/p/07-interview-daniel-rp-o71qut9k3
+    file: content/text/7.itw-daniel-robert-prieto.md
+    # pad: https://mypads2.framapad.org/p/07-interview-daniel-rp-o71qut9k3
     audio: content/audio/itw-dani-rp.mp3
     template: interview
+  
   - title: "Aurélie Vial"
-    # file: content/text/7.itw-aurelie-vial.md
-    pad: https://mypads2.framapad.org/p/07-interview-arelie-vial-v01qnt98k
+    file: content/text/7.itw-aurelie-vial.md
+    # pad: https://mypads2.framapad.org/p/07-interview-arelie-vial-v01qnt98k
     template: interview
     audio: content/audio/itw-aurelie-vial.mp3
+  
   - title: "Baker Wardlaw"
-    # file: content/text/7.itw-baker-wardlaw.md
-    pad: https://mypads2.framapad.org/p/07-interview-baker-wardlaw-hd1qqt9dm
+    file: content/text/7.itw-baker-wardlaw.md
+    # pad: https://mypads2.framapad.org/p/07-interview-baker-wardlaw-hd1qqt9dm
     template: interview
     audio: content/audio/itw-baker-wardlaw.mp3
 
