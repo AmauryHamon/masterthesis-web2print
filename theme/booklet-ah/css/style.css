@@ -86,7 +86,7 @@ body {
   font-family: var(--fontfamily);
   color: var(--color);
   font-size: var(--basesize);
-  line-height: 1.45;
+  line-height: 1.3;
   margin: 0;
   overflow-x: hidden;
 }
@@ -352,7 +352,7 @@ main figure img:hover {
 main blockquote {
   font-style: italic;
   margin-left: 0;
-  padding-left: 4em;
+  padding-left: 2em;
 }
 
 @media screen and (max-width:80rem) {
@@ -492,18 +492,20 @@ sup a.footnote-ref {
   position: relative;
   text-decoration: none;
   border: none;
-  font-weight: bold;
+  font-weight: normal;
+  font-variant-position:super;
+
 }
 /* appels de note */
-.sn-toggle-label::before {
+/* .sn-toggle-label::before {
     content: "["
 }
-.sn-toggle-label::after {content: "]"}
+.sn-toggle-label::after {content: "]"} */
 /* rappel */
 .sn-note::before {
   float: left;
   padding-right: 0.5em;
-  content: "[" attr(data-ref) "]";
+  content: attr(data-ref);
 }
 sup[id^="fn"] {
   vertical-align: baseline;
@@ -522,6 +524,7 @@ sup a.footnote-ref {
   margin-bottom: 1rem;
   position: relative;
   font-style: normal;
+
 }
 .sn-note em,
 .sn-note i {

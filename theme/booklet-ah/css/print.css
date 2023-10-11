@@ -4,24 +4,36 @@
 
   @page {
     size: 100mm 200mm;
-  
-    @bottom-left-corner {
-      content: element(folioRunning);
-      text-align: left;
-    }
-    @bottom-left {
-      content: element(titleRunning);
-      text-align: left;
-    }
+
     @footnote {
       float: bottom;
     }
   }  
   @page:right {
     margin: 8mm 8mm 24mm 14mm;
+
+    @bottom-left {
+      content: element(titleRunning);
+      text-align: left;
+    }
+
+    @bottom-right-corner {
+      content: element(folioRunning);
+      text-align: right;
+    }
   }
   @page:left {
     margin: 8mm 14mm 24mm 8mm;
+
+    @bottom-left-corner {
+      content: element(folioRunning);
+      text-align: left;
+    }
+    @bottom-right {
+      content: element(titleRunning);
+      text-align: right;
+    }
+
   }
   @page cover {
     margin: 8mm 8mm 8mm 12mm;
@@ -35,10 +47,10 @@
   }
   @page sommaire:right {
     margin: 8mm 8mm 8mm 28mm;
-    @bottom-left-corner {
+    @bottom-left-corner , @bottom-right-corner {
       display: none;
     }
-    @bottom-left {
+    @bottom-left, @bottom-right {
       display: none;
     }
   }
@@ -55,10 +67,17 @@
     @bottom-left-corner {
       display: none;
     }
+    @bottom-right-corner {
+      display: none;
+    }
     @bottom-left {
       display: none;
     }
+    @bottom-right {
+      display: none;
+    }
   }
+  
   
 
   /* ------------------------------------------------------------------------ Variables */
@@ -159,7 +178,7 @@
     justify-content: space-between;
   }
   .pagedjs_left_page .runningtitle {
-    flex-direction: row-reverse;
+    flex-direction: row;
   }
   .pagedjs_right_page .runningtitle {
     flex-direction: row;
@@ -175,11 +194,23 @@
     padding: 0;
   }
 
+  main blockquote{ 
+    padding-left: 1.5em;
+  }
+
   .title-element {
     text-align: center;
     text-decoration: none;
   }
-
+  main h1 {
+    font-size: 4em;
+  }
+  main h2 {
+    font-size: 3em;
+  }
+  main h3 {
+    font-size: 2em;
+  }
   main ul {
     margin-block-start: 0;
     padding-inline-start: 1em;
@@ -198,10 +229,18 @@
   figure {
     break-inside: avoid;
   }
+  
+
   .interview :not([data-split-from]) strong:first-child {
     font-weight: bold;
     text-decoration: none;
+
   }
+  .interview :not([data-split-from]) strong:nth-child(2) {
+    font-weight: normal; 
+  }
+  .interview :not()
+  
   .default figure.full {
     margin-left: calc(-1 * (var(--pagedjs-margin-left) - var(--pagedjs-margin-right)) );
     max-width: none;
@@ -270,17 +309,21 @@
   section.footnotes { display: none;}
 
   ::footnote-call {
-    font-weight: bold; 
-    content: "[" counter(footnote) "] ";
-    font-variant-position:normal;
+    font-weight: normal; 
+    /* content: "[" counter(footnote) "] "; */
+    content: counter(footnote);
+    color: var(--accentcolor);
+    font-variant-position:super;
     vertical-align: baseline;
     font-size: 100%;
     padding-left: 0.25em;
   }
 
   ::footnote-marker {
-    content: "[" counter(footnote-marker) "] ";
-    font-weight: bold;
+    /* content: "[" counter(footnote-marker) "] "; */
+    content:counter(footnote-marker)" ";
+    font-weight: normal;
+    color: var(--accentcolor);
   }
   
   .pagedjs_footnote_inner_content {

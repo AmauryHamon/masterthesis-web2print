@@ -55,7 +55,8 @@ parts:
   
   - title: Part 1
     # file: content/text/2.part1.md
-    pad: https://mypads2.framapad.org/p/part-1-m41m9t9wu
+    file: content/text/introduction-vw1lrt9tb.md
+    # pad: https://mypads2.framapad.org/p/part-1-m41m9t9wu
     template: default
    
   - title: Part 2
