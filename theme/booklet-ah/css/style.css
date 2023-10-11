@@ -192,6 +192,14 @@ hr{
   margin: 0;
   padding: 0;
 }
+#nav .nav-ul li a { 
+  text-decoration: none;
+  font-size: 2em;
+}
+#nav .nav-ul li a:hover { 
+  text-decoration: none;
+  color: var(--accentcolor);
+}
 /* #index : le sommaire, une fois cloné */
 #index {
   position: sticky;
@@ -219,6 +227,9 @@ hr{
 }
 #index a {
   text-decoration: none;
+}
+#index a:hover {
+  text-decoration: underline;
 }
 #index .active {
   text-decoration: underline;
