@@ -44,34 +44,33 @@ pdf: "browsing-gathering-contextualizing--amaury-hamon"
 # Structure du contenu (= sommaire)
 parts:
   - title: Abstract
-    # file : content/text/0.prefatorynote.md
-    pad: https://mypads2.framapad.org/p/abstract-i61m3t9e2
+    file : content/text/0.prefatorynote.md
+    # pad: https://mypads2.framapad.org/p/abstract-i61m3t9e2
     template : default
   
   - title: Introduction
-    # file: content/text/1.intro.md
-    pad: https://mypads2.framapad.org/p/introduction-vw1lrt9tb
+    file: content/text/introduction-vw1lrt9tb.md
+    # pad: https://mypads2.framapad.org/p/introduction-vw1lrt9tb
     template: default
   
   - title: Part 1
-    # file: content/text/2.part1.md
-    file: content/text/introduction-vw1lrt9tb.md
+    file: content/text/part-1-m41m9t9wu.md
     # pad: https://mypads2.framapad.org/p/part-1-m41m9t9wu
     template: default
    
   - title: Part 2
-    # file: content/text/3.part2.md
-    pad: https://mypads2.framapad.org/p/part-2-6a1mat9bx
+    file: content/text/part-2-6a1mat9bx.md
+    # pad: https://mypads2.framapad.org/p/part-2-6a1mat9bx
     template: default
    
   - title: Part 3
-    # file: content/text/4.part3.md
-    pad: https://mypads2.framapad.org/p/part-3-ke1mbt9me
+    file: content/text/4.part3.md
+    # pad: https://mypads2.framapad.org/p/part-3-ke1mbt9me
     template: default
    
   - title: Conclusion
-    file: content/text/5.conclusion.md
-    # pad: https://mypads2.framapad.org/p/conclusion-ku1mct9v8
+    # file: content/text/5.conclusion.md
+    pad: https://mypads2.framapad.org/p/conclusion-ku1mct9v8
     template: default
    
   - title: Appendices
@@ -86,7 +85,7 @@ parts:
   - title: "Interviews"
     # template: default
     file: content/text/7.itw-intro.md
-    pad: https://mypads2.framapad.org/p/07-interview-e91qkt9mg
+    # pad: https://mypads2.framapad.org/p/07-interview-e91qkt9mg
   
   - title: "Gemma Copeland"
     file: content/text/7.itw-gemma-copeland.md
