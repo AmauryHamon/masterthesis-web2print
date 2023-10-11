@@ -11,8 +11,7 @@ The song *Remember to remember*, composed by Rick Holmes and produced by Roy Aye
 [^holmes]: Chorus in the lyrics of Remember to remember – Rick Holmes, 1981
 
 
-
-(video: [https://www.youtube.com/watch?v=smEbUcgI24o](https://www.youtube.com/watch?v=smEbUcgI24o) poster: content/images/01.jpg caption: Rick Holmes – Remember to remember, 1981, produced by Roy Ayers.)
+(video: https://www.youtube.com/watch?v=smEbUcgI24o poster: content/images/01.jpg caption: Rick Holmes – Remember to remember, 1981, produced by Roy Ayers.)
 
 
 
