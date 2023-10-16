@@ -49,7 +49,7 @@ parts:
     template : default
   
   - title: Introduction
-    file: content/text/introduction-vw1lrt9tb.md
+    file: content/text/introduction-vw1lrt9tb-2.md
     # pad: https://mypads2.framapad.org/p/introduction-vw1lrt9tb
     template: default
   
