@@ -151,21 +151,21 @@ parts:
   #   template: interview
 
   - title: Glossary
-    # file: content/text/8.glossaire.md
-    pad: https://mypads2.framapad.org/p/glossary-5x1mdt9ff
+    file: content/text/8.glossaire.md
+    # pad: https://mypads2.framapad.org/p/glossary-5x1mdt9ff
     template: references
    
   - title: References
-    # file: content/text/9.references.md
-    pad: https://mypads2.framapad.org/p/bibliography-zx1mft90n
+    file: content/text/9.references.md
+    # pad: https://mypads2.framapad.org/p/bibliography-zx1mft90n
     template: references
    
   - title: Acknowledgements
-    # file: content/text/10.remerciements.md
-    pad: https://mypads2.framapad.org/p/acknowledgements-r31mgt92o
+    file: content/text/10.remerciements.md
+    # pad: https://mypads2.framapad.org/p/acknowledgements-r31mgt92o
     template: thanks
 
   - title: Impressum
-    # file: content/text/11.impressum.md
-    pad: https://mypads2.framapad.org/p/impressum-yl1mlt9hj
+    file: content/text/11.impressum.md
+    # pad: https://mypads2.framapad.org/p/impressum-yl1mlt9hj
     template: thanks
