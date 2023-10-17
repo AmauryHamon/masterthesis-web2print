@@ -40,11 +40,20 @@ Sommaire :
   font-weight: bold;
   font-style: normal;
 }
+@font-face {
+  font-family: "Visual Trial Black";
+  src: url("fonts/Visual-Black-trial.otf") format("otf"),
+  font-weight: black;
+  font-style: normal;
+}
 
 /* ------------------------------------------------------------------------ Variables */
 :root {
   /* typographie */
   --fontfamily: "Ecole", sans-serif;
+  --fontheading: "Visual Trial Black", sans-serif;
+  --lineheightheading: .9;
+
   --bigsize: clamp(2.50rem, calc(1.83rem + 3.33vw), 6.00rem);
   --basesize: 1.15rem;
   --color: rgba(0, 0, 0, 0.85);
@@ -107,24 +116,25 @@ hr{
 }
 #header h1 {
   margin: 0;
-  line-height: 1.1;
+  margin-bottom: 1rem;
+  line-height: .8;
   max-width: calc(var(--bigsize) * 16);
-  font-size: calc(var(--bigsize) * 1);
+  font-size: calc(var(--bigsize) * 1.5);
   color: var(--accentcolor);
 }
 #header h2 {
+  font-family: var(--fontheading);
+  line-height: var(--lineheightheading);
   margin: 0;
-  line-height: 1.2;
   max-width: calc(var(--bigsize) * 16);
-  font-size: calc(var(--bigsize) * .75);
   color: var(--accentcolor);
 }
 #header h2::before{
   content: "";
   display: block;
-  width: 1ch;
+  /* width: 1ch;
   border-top: 2px solid ;
-  margin: .5em 0;
+  margin: .5em 0; */
 }
 #header h2:empty { display: none;}
 .meta {
@@ -169,6 +179,12 @@ hr{
   grid-column: 2;
   margin: 0;
   font-size: 1em;
+  font-family: var(--fontheading);
+  line-height: var(--lineheightheading);
+
+}
+#nav h2{
+  font-size: 3em;
 }
 .nav-default + .nav-appendices { margin-top: 1em;}
 
@@ -178,7 +194,14 @@ hr{
   margin: 0;
   padding: 0;
 }
-
+#nav .nav-ul li a { 
+  text-decoration: none;
+  font-size: 2em;
+}
+#nav .nav-ul li a:hover { 
+  text-decoration: none;
+  color: var(--accentcolor);
+}
 .nav-appendices + .nav-interview {margin-top: 1em}
 .nav-interview + .nav-references {margin-top: 1em}
 
@@ -250,7 +273,11 @@ hr{
   #index-quicklinks { display: none;}
 }
 
-
+h1, h2, h3, h4 {
+  font-family: var(--fontheading);
+  line-height: var(--lineheightheading);
+  
+}
 /* ------------------------------------------------------------------------ Content */
 main {
   display: grid;
@@ -280,21 +307,43 @@ main h3:first-child {
 }
 
 main h1 {
-  font-size: 1.5em;
+  font-family: var(--fontheading);
+  font-size: 8em;
+  line-height: var(--lineheightheading);
+  max-width: var(--maxwidth);
+  text-align: center;
+
 }
 main h2 {
-  font-size: 1em;
+  font-family: var(--fontheading);
+  line-height: var(--lineheightheading);
+  font-size: 6em;
+  max-width: var(--maxwidth);
+text-align: center;
+
+
 }
 main h3 {
-  font-size: 1em;
-  margin-left: 2em;
-  font-weight: normal;
-  text-decoration: underline;
+  font-family: var(--fontheading);
+  font-size: 4em;
+  /* margin-left: 2em; */
+  font-weight: bold;
+  text-align: center;
+  line-height: var(--lineheightheading);
+  max-width: var(--maxwidth);
+  text-align: center;
+
+
 }
 main h4 {
-  font-size: 1em;
+  font-family: var(--fontheading);
+  font-size: 2em;
   margin-left: 2em;
   font-weight: normal;
+  line-height: var(--lineheightheading);
+  text-align: center;
+  max-width: var(--maxwidth);
+
 }
 
 main figure {
@@ -302,10 +351,19 @@ main figure {
   max-width: var(--maxwidth);
 }
 
+main figure img {
+  border-radius: 2em;
+  transition-property: border-radius;
+  transition-duration: 300ms;
+}
+main figure img:hover {
+  border-radius: 0em;
+}
+
 main blockquote {
   font-style: italic;
   margin-left: 0;
-  padding-left: 4em;
+  padding-left: 1.5em;
 }
 
 @media screen and (max-width:80rem) {
@@ -338,9 +396,7 @@ main blockquote {
 .interview :not([data-split-from]) strong:first-child {
   margin-left: calc(var(--indent) * -1);
   min-width: calc(var(--indent) - 1em);
-  /* float: left; */
-  width: 0;
-  position: absolute;
+  float: left;
   text-align: right;
   padding-right: 1em;
   text-decoration: underline;
@@ -398,6 +454,8 @@ main blockquote {
   font-size: 0.85rem;
   margin-right: calc(-250px - var(--spacer));
   margin-bottom: 1rem;
+  color: var(--accentcolor);
+
 }
 .imagenote img {
   display: block;
@@ -454,6 +512,8 @@ sup a.footnote-ref {
   text-decoration: none;
   border: none;
   font-weight: bold;
+  font-variant-position:super;
+
 }
 /* appels de note */
 .sn-toggle-label::before {content: "["}
@@ -462,7 +522,7 @@ sup a.footnote-ref {
 .sn-note::before {
   float: left;
   padding-right: 0.5em;
-  content: "[" attr(data-ref) "]";
+  content: attr(data-ref);
 }
 sup[id^="fn"] {
   vertical-align: baseline;
@@ -516,7 +576,7 @@ sup a.footnote-ref {
     top: 0;
   }
   label[for^="sn-"] {
-    color: #ff6347;
+    color: var(--accentcolor);
     cursor: pointer;
     font-weight: 700;
   }
@@ -601,6 +661,7 @@ hr.footnotes-sep {
 figcaption {
   font-size: 0.85rem;
   background: white;
+  color: var(--accentcolor);
   padding: 0.5em 0 0;
 }
 figcaption::before {
