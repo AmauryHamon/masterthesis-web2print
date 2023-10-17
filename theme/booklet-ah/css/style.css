@@ -130,7 +130,7 @@ hr{
   color: var(--accentcolor);
 }
 #header h2::before{
-  content: "—";
+  content: "";
   display: block;
   font-size: calc(var(--bigsize) * .75);
 }
@@ -571,7 +571,7 @@ sup a.footnote-ref {
     top: 0;
   }
   label[for^="sn-"] {
-    color: #ff6347;
+    color: var(--accentcolor);
     cursor: pointer;
     font-weight: 700;
   }
