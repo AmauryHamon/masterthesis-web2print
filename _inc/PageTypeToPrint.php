@@ -87,8 +87,11 @@
     $nav = "";
     foreach($parts as $part){
       $part_title = $part["title"];
-      $template = $part["template"];
-      // each section is assigned an `id` generated from the section title
+      // check if template is defined then use it (remove error while working locally)
+      if (isset($part["template"])) {
+        $template = $part["template"];
+        // Your code to handle the $template variable goes here
+      }      // each section is assigned an `id` generated from the section title
       $slug = slugify($part_title);
       $nav .= "<li id='nav-$slug' class='nav-$template'><a href='#$slug'>$part_title</a></li>";
     }
@@ -132,8 +135,11 @@
 
       // base data for each part
       $part_title = $part["title"];
-      $template = $part["template"] ;
-      // each section is assigned an `id` generated from the section title
+      // check if template is defined then use it (remove error while working locally)
+      if (isset($part["template"])) {
+        $template = $part["template"];
+        // Your code to handle the $template variable goes here
+      }      // each section is assigned an `id` generated from the section title      // each section is assigned an `id` generated from the section title
       $slug = slugify( $part_title );
 
       // According to template, set the HTML structure of part
@@ -144,7 +150,9 @@
         //if interview template has an audio file, add audio player
         if(array_key_exists("audio", $part)){
           $audio = $part["audio"];
-          $content = "<h2>$part_title</h2>\n\n<audio controls src='$audio'></audio>\n\n$content";
+          $content = "<hr><h2>$part_title</h2>\n\n<audio controls controlsList='nodownload' src='$audio'></audio>\n\n<button onclick='openAccordion(`container-$slug`)' class='accordion-toggle'>Read Interview Transcript</button><div id='container-$slug' class='hidden accordion-container'>$content</div>";
+        } else {
+          $content = "<hr><h2>$part_title</h2>\n\n<button onclick='openAccordion(`container-$slug`)' class='accordion-toggle'>Read Interview Transcript</button><div id='container-$slug' class='hidden accordion-container'>$content</div>";
         }
       }
       if($template == "appendices" || $template == "autofolder"){

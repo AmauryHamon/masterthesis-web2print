@@ -176,12 +176,18 @@ hr{
 }
 #nav h2,
 #nav ul {
+  columns: 2;
+  -webkit-columns: 2;
+  -moz-columns: 2;
   grid-column: 2;
   margin: 0;
   font-size: 1em;
   font-family: var(--fontheading);
   line-height: var(--lineheightheading);
 
+}
+#nav ul #nav-conclusion {
+  margin-bottom: 20rem;
 }
 #nav h2{
   font-size: 3em;
@@ -202,7 +208,8 @@ hr{
   text-decoration: none;
   color: var(--accentcolor);
 }
-.nav-appendices + .nav-interview {margin-top: 1em}
+.nav-appendices {margin-top: 1em}
+/* .nav-appendices + .nav-interview {margin-top: 1em} */
 .nav-interview + .nav-references {margin-top: 1em}
 
 /* #index : le sommaire, une fois cloné */
@@ -229,12 +236,18 @@ hr{
   text-align: center;
   position: absolute;
   bottom: var(--spacer);
+  
 }
 #index a {
   text-decoration: none;
+  font-weight: bold;
+}
+#index .nav-ul li a:hover { 
+  text-decoration: none;
+  color: var(--accentcolor);
 }
 #index .active {
-  text-decoration: underline;
+  color: var(--accentcolor);
 }
 #index-quicklinks a{
   display: block;
@@ -308,7 +321,7 @@ main h3:first-child {
 
 main h1 {
   font-family: var(--fontheading);
-  font-size: 8em;
+  font-size: 6em;
   line-height: var(--lineheightheading);
   max-width: var(--maxwidth);
   text-align: center;
@@ -317,7 +330,7 @@ main h1 {
 main h2 {
   font-family: var(--fontheading);
   line-height: var(--lineheightheading);
-  font-size: 6em;
+  font-size: 4em;
   max-width: var(--maxwidth);
 text-align: center;
 
@@ -325,7 +338,7 @@ text-align: center;
 }
 main h3 {
   font-family: var(--fontheading);
-  font-size: 4em;
+  font-size: 3em;
   /* margin-left: 2em; */
   font-weight: bold;
   text-align: center;
@@ -382,9 +395,40 @@ main blockquote {
 }
 
 /* ------------------------------------------------------------------------ Entretiens (template = interview) */
+
+.interview hr {
+  width: var(--maxwidth);
+  border: 1px solid var(--accentcolor);
+}
 .interview p {
   --indent: 8em;
   padding-left: var(--indent);
+}
+
+.interview p:has(audio) {
+  padding-left: 0 !important;
+}
+.interview p:has(button) {
+  padding-left: 0 !important;
+}
+.interview p audio {
+  background-color: #f1f3f4;
+  border-radius: 2rem;
+
+}
+.interview p button {
+  width: 100%;
+  height: 54px;
+  border-radius: 2rem;
+  font-size: 1rem;
+  letter-spacing: .01rem;
+  border: 0;
+  background-color: #f1f3f4;
+  cursor: pointer;
+  font-weight: bold;
+}
+.interview p button:hover {
+  color: var(--accentcolor);
 }
 @media screen and (max-width:40rem) {
   .interview p { --indent: 0 }
@@ -403,6 +447,21 @@ main blockquote {
   font-weight: normal;
 }
 
+
+/* ------------------------------------------------------------------------ Accordion */
+section.interview .hidden {
+  display: none;
+}
+section.interview .show {
+  display: block !important;
+}
+
+
+/* ------------------------------------------------------------------------ Audio */
+audio {
+  width: 100%;
+
+}
 /* ------------------------------------------------------------------------ Glossaire (template = glossary) */
 .glossary {
   columns: 3;
@@ -506,18 +565,19 @@ main blockquote {
 .sn-toggle-label,
 sup a.footnote-ref {
   padding: 0 0 0.25em 0.15em;
-  font-size: 0.75em;
+  font-size: 1em; 
   top: -0.05em;
   position: relative;
   text-decoration: none;
   border: none;
+  color: var(--accentcolor);
   font-weight: bold;
   font-variant-position:super;
 
 }
 /* appels de note */
-.sn-toggle-label::before {content: "["}
-.sn-toggle-label::after {content: "]"}
+.sn-toggle-label::before {content: ""}
+.sn-toggle-label::after {content: ""}
 /* rappel */
 .sn-note::before {
   float: left;
@@ -725,3 +785,4 @@ figcaption::before {
 .video + figcaption {
   margin-top: -1em;
 }
+

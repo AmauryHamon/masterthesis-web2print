@@ -96,7 +96,23 @@
     min-height: 0;
     counter-reset: page 1;  
   }
-  #nav h2, #nav ul { grid-column: 1; }
+  #nav h2, #nav ul { 
+    grid-column: 1; 
+    font-size: 1rem;
+  }
+  .toc-element {
+    margin-top: 0;
+  }
+  #nav ul li a {
+    text-decoration: none;
+
+  }
+  #nav ul {
+    columns: 1;
+    -webkit-columns: 1;
+    -moz-columns: 1;
+  
+  }
 
   /* ------------------------------------------------------------------------ Running titles */
   /* running title */
@@ -240,16 +256,19 @@
   .note-marker_imagenote,
   .note-call_imagenote {
     letter-spacing: 0.05em;
-    font-weight: bold;
+    font-weight: normal;
+    color: var(--accentcolor);
   }
   .note-call_imagenote { padding-left: 0.25em;}
 
+  
   /* ------------------------------------------------------------------------ Footnotes */
   .footnote {
     float: footnote;
     counter-increment: footnote;
     break-inside: avoid;
     -webkit-column-break-inside: avoid;
+
   }
   
   .footnote:has(.breakcolumn) {
@@ -262,16 +281,19 @@
 
   ::footnote-call {
     font-weight: bold; 
-    content: "[" counter(footnote) "] ";
-    font-variant-position:normal;
+    content: counter(footnote);
+    font-variant-position:super;
     vertical-align: baseline;
     font-size: 100%;
     padding-left: 0.25em;
+    color: var(--accentcolor);
   }
 
   ::footnote-marker {
-    content: "[" counter(footnote-marker) "] ";
+    content: counter(footnote-marker) ". ";
     font-weight: bold;
+    color: var(--accentcolor);
+
   }
   
   .pagedjs_footnote_inner_content {
@@ -346,12 +368,22 @@
     page-break-before: always;
   }
   .interview > h2 {
-    display: none;
+    display: block;
   }
   .interview p {
     --indent: 8em;
     margin-left: -8em;
     max-width: none;
+  }
+  .interview button, audio, hr {
+    display: none;
+  }
+ 
+  section.interview .hidden {
+    display: block;
+  }
+  section.interview .show {
+    display: block !important;
   }
 
   /* ------------------------------------------------------------------------ Glossaire */
@@ -370,21 +402,26 @@
     content: target-counter(attr(href), page);
     position: absolute;
     left: 0;
-    margin-left: calc(-4em - 20px);
+    margin-left: calc(-3.5em - 20px);
     text-align: right;
-    width: 4em;
+    width: 2em;
   }
+  #list-toc-generated .toc-element {
+    line-height: 0.9;
+    font-size: 1.5rem;
+    font-family: var(--font-family);
 
+  }
   #list-toc-generated .toc-element-level-1 {
     font-weight: bold;
-    margin-top: 1em;
+    /* margin-top: 1em; */
   }
 
   #list-toc-generated .toc-element-level-2 {
     margin-left: 20px;
   }
   #list-toc-generated .toc-element-level-2 a::before {
-    margin-left: calc(-4em - 40px);
+    /* margin-left: calc(-4em - 40px); */
   }
 
 

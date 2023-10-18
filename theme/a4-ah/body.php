@@ -50,7 +50,7 @@
 
 <!-- la navigation (= le sommaire) -->
 <nav id="nav">
-    <h2>Sommaire</h2>
+    <h2>Table of Contents</h2>
     <ul class="nav-ul">
         <?= $nav() ?>
     </ul>

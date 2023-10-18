@@ -5,7 +5,7 @@
 theme: "a4-ah"
 
 # Le titre du document
-title: Pass the information, Extend the Knowledge # &nbsp; = espace insécable, <br class="breakprint"> produit un saut uniquement en version print
+title: Pass the Information, Extend the Knowledge # &nbsp; = espace insécable, <br class="breakprint"> produit un saut uniquement en version print
 
 # Le sous-titre éventuel du document
 subtitle: "Online Ways of Knowledge Gathering in Creative Practices"
@@ -69,8 +69,8 @@ parts:
     template: default
    
   - title: Conclusion
-    # file: content/text/5.conclusion.md
-    pad: https://mypads2.framapad.org/p/conclusion-ku1mct9v8
+    file: content/text/5.conclusion.md
+    # pad: https://mypads2.framapad.org/p/conclusion-ku1mct9v8
     template: default
    
   - title: Appendices
@@ -83,7 +83,7 @@ parts:
   # create a parts Interview and inside, nest each entry with their title, template and file
 
   - title: "Interviews"
-    # template: default
+    template: default
     file: content/text/7.itw-intro.md
     # pad: https://mypads2.framapad.org/p/07-interview-e91qkt9mg
   

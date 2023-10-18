@@ -114,7 +114,7 @@ class marginNotes extends Paged.Handler {
           counter-increment: markerNote_' + toCamelClassNote(classNotes) + ';\
       }\
       .note-marker_' + classNotes + '::before {\
-        content: "[" counter(markerNote_' + toCamelClassNote(classNotes) + ', lower-alpha) "]";\
+        content: "" counter(markerNote_' + toCamelClassNote(classNotes) + ', lower-alpha) "";\
       }\
     ' + notePosition);
 
