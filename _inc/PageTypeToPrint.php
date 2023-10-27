@@ -150,9 +150,9 @@
         //if interview template has an audio file, add audio player
         if(array_key_exists("audio", $part)){
           $audio = $part["audio"];
-          $content = "<hr><h2>$part_title</h2>\n\n<audio controls controlsList='nodownload' src='$audio'></audio>\n\n<button onclick='openAccordion(`container-$slug`)' class='accordion-toggle'>Read Interview Transcript</button><div id='container-$slug' class='hidden accordion-container'>$content</div>";
+          $content = "<br class='breakprint'><div class='itw-container'><h2>$part_title</h2>\n\n<div class='itw-buttons'><audio controls controlsList='nodownload' src='$audio'></audio><button onclick='openAccordion(`container-$slug`)' class='accordion-toggle'>Read Interview Transcript</button></div><div id='container-$slug' class='hidden accordion-container'>$content</div></div>";
         } else {
-          $content = "<hr><h2>$part_title</h2>\n\n<button onclick='openAccordion(`container-$slug`)' class='accordion-toggle'>Read Interview Transcript</button><div id='container-$slug' class='hidden accordion-container'>$content</div>";
+          $content = "<br class='breakprint'><div class='itw-container'><h2>$part_title</h2>\n\n<div class='itw-buttons'><button onclick='openAccordion(`container-$slug`)' class='accordion-toggle'>Read Interview Transcript</button></div><div id='container-$slug' class='hidden accordion-container'>$content</div></div>";
         }
       }
       if($template == "appendices" || $template == "autofolder"){
