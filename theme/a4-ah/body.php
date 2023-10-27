@@ -7,7 +7,7 @@
 
     <!-- le titre courant (version print) -->
     <div class="runningtitle">
-        <div><?= $student['name'] ?></div>
+        
         <div><?= $title ?></div>
     </div>
 
@@ -17,8 +17,7 @@
         <!-- Logo ÉSAD Pyrénées -->
         <!-- <img src="/css/logo.png" alt="ESAD Pyrénées"> -->
         <!-- Votre diplôme -->
-        <span class="diploma"><?= $diploma ?></span>
-    </div>
+        <div><?= $student['name'] ?></div>    </div>
 
     <!-- les méta-données -->
     <div class="meta">
