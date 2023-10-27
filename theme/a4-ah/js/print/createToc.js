@@ -79,7 +79,7 @@ class handlers extends Paged.Handler {
     createToc({
       content: content,
       tocElement: '#nav',
-      titleElements: ['main h2', 'main .default h3' ]
+      titleElements: ['main h1', '.interview h2']
     });
   }
  
