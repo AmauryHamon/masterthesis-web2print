@@ -47,24 +47,33 @@ parts:
     file : content/text/0.prefatorynote.md
     # pad: https://mypads2.framapad.org/p/abstract-i61m3t9e2
     template : default
+
+  - title: Design Notes
+    file : content/text/0.designnotes.md
+    template : default
   
   - title: Introduction
-    file: content/text/introduction-vw1lrt9tb.md
+    file: content/text/1.intro.md
     # pad: https://mypads2.framapad.org/p/introduction-vw1lrt9tb
     template: default
   
-  - title: Part 1
-    file: content/text/part-1-m41m9t9wu.md
+  - title: Browsing
+    file: content/text/2.part1.md
     # pad: https://mypads2.framapad.org/p/part-1-m41m9t9wu
     template: default
    
-  - title: Part 2
-    file: content/text/part-2-6a1mat9bx.md
+  - title: Gathering
+    file: content/text/3.part2.md
     # pad: https://mypads2.framapad.org/p/part-2-6a1mat9bx
     template: default
    
-  - title: Part 3
+  - title: The Case of Are.na
     file: content/text/4.part3.md
+    # pad: https://mypads2.framapad.org/p/part-3-ke1mbt9me
+    template: default
+
+  - title: (Digital) Gardening
+    file: content/text/4.part4.md
     # pad: https://mypads2.framapad.org/p/part-3-ke1mbt9me
     template: default
    
@@ -150,10 +159,10 @@ parts:
   #   file: content/text/7.1.entretiens.md
   #   template: interview
 
-  - title: Glossary
-    file: content/text/8.glossaire.md
-    # pad: https://mypads2.framapad.org/p/glossary-5x1mdt9ff
-    template: references
+  # - title: Glossary
+  #   file: content/text/8.glossaire.md
+  #   # pad: https://mypads2.framapad.org/p/glossary-5x1mdt9ff
+  #   template: references
    
   - title: References
     file: content/text/9.references.md
