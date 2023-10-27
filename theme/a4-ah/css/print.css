@@ -162,6 +162,7 @@
     display: block;
     padding: 0;
   }
+  h1 {margin-top: 0;}
   .default p {
     /* minimum deux lignes présentes sur la page, au début ou à la fin d’un paragraphe */
     orphans: 2;
@@ -172,7 +173,7 @@
     — quand le paragaphe succède à autre chose qu’un paragraphe
     — quand un paragraphe est coupé par un saut ( il contient alors l’attribuet `data-split-from`
   */
-  .default p + p:not([data-split-from]) { text-indent: 2em; }
+  .default p + p:not([data-split-from]) { text-indent: 1.5em; }
 
   #nav, section { 
     margin-bottom: 0; 
@@ -192,6 +193,7 @@
     display: block;
     content: "→ " attr(data-src);
     font-size: var(--smallsize);
+    color: var(--accentcolor);
   }
   .video[style]{
     background: var(--poster);
@@ -268,6 +270,7 @@
     counter-increment: footnote;
     break-inside: avoid;
     -webkit-column-break-inside: avoid;
+    color: var(--accentcolor);
 
   }
   
