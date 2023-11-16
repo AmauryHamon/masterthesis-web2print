@@ -190,7 +190,10 @@ hr{
   column-gap: 0;
   padding: var(--spacer);
   align-content: center;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
 }
+
 #nav h2,
 #nav ul {
   columns: 2;
@@ -308,6 +311,24 @@ h1, h2, h3, h4 {
   font-family: var(--fontheading);
   line-height: var(--lineheightheading);
   
+}
+@media screen and (max-width:45rem) {
+  #nav h2 {
+    columns:1;
+    -webkit-columns:1;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+  }
+  #nav ul{
+    columns: 1;
+    -webkit-columns: 1;
+  }
+  #nav ul #nav-conclusion{
+    margin-bottom: 1rem;
+  }
+  #nav .nav-ul li a {
+    font-size: 1.5rem;
+  }
 }
 /* ------------------------------------------------------------------------ Content */
 main {
