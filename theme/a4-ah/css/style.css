@@ -558,6 +558,7 @@ main blockquote p:last-child {
 }
 @media screen and (max-width:40rem) {
   .interview p { --indent: 0 }
+  
 }
 .interview p:nth-child(1) strong:first-child,
 .interview p:nth-child(2) strong:first-child {
@@ -571,6 +572,21 @@ main blockquote p:last-child {
   padding-right: 1em;
   text-decoration: underline;
   font-weight: normal;
+}
+@media screen and (max-width:30rem) {
+  .itw-buttons {
+    margin-top: 1em;
+    flex-direction: column !important;
+    gap: .25em !important;
+  }
+  .itw-buttons audio{
+    width: 100%;
+    flex: none;
+  }
+  .itw-buttons button {
+    height: 54px;
+    flex: none;
+  }
 }
 
 
