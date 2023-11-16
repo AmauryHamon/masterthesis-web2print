@@ -18,40 +18,47 @@ Sommaire :
 
 /* ------------------------------------------------------------------------ Fonts */
 @font-face {
+  font-family: "OCR-X Regular";
+  src: url(fonts/OCR-X-Regular.otf) ;
+  font-weight: normal;
+
+}
+
+/* @font-face {
   font-family: "Ecole";
   src: url("fonts/Ecole-Italic.woff2") format("woff2"),
     url("fonts/Ecole-Italic.woff") format("woff");
   font-weight: normal;
   font-style: italic;
-}
+} */
 
-@font-face {
+/* @font-face {
   font-family: "Ecole";
   src: url("fonts/Ecole-Regular.woff2") format("woff2"),
     url("fonts/Ecole-Regular.woff") format("woff");
   font-weight: normal;
   font-style: normal;
-}
+} */
 
-@font-face {
+/* @font-face {
   font-family: "Ecole";
   src: url("fonts/Ecole-Bold.woff2") format("woff2"),
     url("fonts/Ecole-Bold.woff") format("woff");
   font-weight: bold;
   font-style: normal;
-}
+} */
 @font-face {
-  font-family: "Visual Trial Black";
-  src: url("fonts/Visual-Black-trial.otf") format("otf"),
-  font-weight: black;
-  font-style: normal;
+  font-family: "OCR-X Bold";;
+  src: url("fonts/OCR-X-Bold.otf") ;
+  font-weight: bold;
+  font-style:normal;
 }
 
 /* ------------------------------------------------------------------------ Variables */
 :root {
   /* typographie */
-  --fontfamily: "Ecole", sans-serif;
-  --fontheading: "Visual Trial Black", sans-serif;
+  --fontfamily: "OCR-X Regular", sans-serif;
+  --fontheading: "OCR-X Bold", sans-serif;
   --lineheightheading: .95;
 
   --bigsize: clamp(2.50rem, calc(1.83rem + 3.33vw), 6.00rem);
@@ -84,6 +91,8 @@ html { scroll-behavior: smooth; }
 /* page defaults */
 body {
   font-family: var(--fontfamily);
+  font-feature-settings: "ss02";
+
   color: var(--color);
   font-size: var(--basesize);
   line-height: 1.45;
@@ -91,7 +100,11 @@ body {
   overflow-x: hidden;
 }
 p:first-child { margin-top: 0; }
-a { color: currentColor; }
+a { 
+  color: currentColor; 
+  text-underline-offset: 0.12em;
+}
+a:hover{color: var(--accentcolor);}
 img { max-width: 100%; height: auto; }
 mark { background: var(--accentcolor); padding: 0 .15em;}
 sub, sup { line-height: 0; }
@@ -121,6 +134,8 @@ hr{
   max-width: calc(var(--bigsize) * 16);
   font-size: calc(var(--bigsize) * 1.5);
   color: var(--accentcolor);
+  font-feature-settings: "ss05";
+  letter-spacing: -.05em;
 }
 #header h2 {
   font-family: var(--fontheading);
@@ -128,6 +143,7 @@ hr{
   margin: 0;
   max-width: calc(var(--bigsize) * 16);
   color: var(--accentcolor);
+  margin-top: 2rem;
 }
 #header h2::before{
   content: "";
@@ -185,6 +201,7 @@ hr{
   font-size: 1em;
   font-family: var(--fontheading);
   line-height: var(--lineheightheading);
+  font-feature-settings: "ss05";
 
 }
 #nav ul #nav-conclusion {
@@ -209,7 +226,7 @@ hr{
   text-decoration: none;
   color: var(--accentcolor);
 }
-.nav-appendices {margin-top: 1em}
+#nav-interviews {margin-top: 1em}
 /* .nav-appendices + .nav-interview {margin-top: 1em} */
 .nav-interview + .nav-references {margin-top: 1em}
 
@@ -313,6 +330,19 @@ main ul,
 main blockquote,
 main ol {
   max-width: var(--maxwidth);
+  list-style-type: none;
+  padding-left: 0; 
+}
+main ol li {
+  /* padding-left: 2rem; */
+}
+main ol li p {
+
+}
+main ol li:before {
+  content: counter(level1) " "; /*Instead of ". " */
+  counter-increment: level1;
+  font-variant-numeric: tabular-nums;
 }
 main h1:first-child,
 main h2:first-child,
@@ -322,35 +352,40 @@ main h3:first-child {
 
 main h1 {
   font-family: var(--fontheading);
-  font-size: 6em;
+  font-size: 4em;
   line-height: var(--lineheightheading);
   max-width: var(--maxwidth);
   text-align: center;
   padding: 1em .1em;
   background-color: var(--accentcolor);
   border-radius: 5em;
+  font-feature-settings: "ss05";
+
 
 }
+
 main h2 {
-  font-family: var(--fontheading);
+  font-family: var(--fontfamily);
+
   line-height: var(--lineheightheading);
-  font-size: 2.5em;
+  font-size: 1.5em;
   max-width: var(--maxwidth);
-text-align: center;
+text-align: left;
 border-top: 1px solid black;
 padding-top: 1em;
+font-feature-settings: "ss05";
 
 
 }
 main h3 {
   font-family: var(--fontheading);
-  font-size: 1.5em;
+  font-size: 1em;
   /* margin-left: 2em; */
-  font-weight: bold;
-  text-align: center;
+  /* font-weight: bold; */
+  text-align: left;
   line-height: var(--lineheightheading);
   max-width: var(--maxwidth);
-  text-align: center;
+  /* text-align: center; */
 
 
 }
@@ -380,10 +415,45 @@ main figure img:hover {
 }
 
 main blockquote {
-  font-style: italic;
+  font-style: normal;
   margin-left: 0;
-  padding-left: 1.5em;
+  padding: 1.5em;
+  border: 2px solid var(--accentcolor);
+  color: var(--accentcolor);
+  border-radius: 2rem;
+  margin-inline-end: 0;
 }
+
+
+/* main blockquote::before{
+  content: ' ';
+  position: absolute;
+  width: 0;
+  height: 0;
+  left: -8px;
+  right: auto;
+  top: auto;
+  bottom: -40px;
+  border: 40px solid;
+  border-color: transparent transparent transparent #666;
+  
+}
+main blockquote:after{
+    content: ' ';
+    position: absolute;
+    width: 0;
+    height: 0;
+    left: 0px;
+    right: auto;
+    top: auto;
+    bottom: -20px;
+    border: 22px solid;
+    border-color: transparent transparent transparent lightyellow;
+} */
+main blockquote p:last-child {
+  margin-bottom: 0;
+}
+
 
 @media screen and (max-width:80rem) {
   main { 
@@ -413,6 +483,9 @@ main blockquote {
   color: var(--accentcolor);
   padding-top: .25em;
   margin-bottom: .25em;
+  text-align: center;
+  font-family: var(--fontheading);
+  font-size: 3em;
 }
 .interview p {
   --indent: 8em;
@@ -592,15 +665,16 @@ section.interview .show {
 }
 .sn-toggle-label,
 sup a.footnote-ref {
-  padding: 0 0 0.25em 0.15em;
+  /* padding: 0 0 0.25em 0.15em; */
   font-size: 1em; 
   top: -0.05em;
   position: relative;
   text-decoration: none;
   border: none;
   color: var(--accentcolor);
-  font-weight: bold;
+  /* font-weight: bold; */
   font-variant-position:super;
+  letter-spacing: -0.30em;
 
 }
 /* appels de note */
@@ -611,6 +685,7 @@ sup a.footnote-ref {
   float: left;
   padding-right: 0.5em;
   content: attr(data-ref) ".";
+  color: var(--accentcolor);
 }
 sup[id^="fn"] {
   vertical-align: baseline;
@@ -793,6 +868,18 @@ figcaption::before {
   figcaption::before {
     content: "↓ " !important;
   }
+  main h1 {
+    font-size: 2.5rem !important;
+  }
+  main h2 {
+    font-size: 1.5rem !important;
+  }
+  main ul {
+    padding-left: 1.25rem;
+  }
+  main ol {
+    /* padding-left: 2rem; */
+  }
 }
 
 /* ------------------------------------------------------------------------ Videos */
@@ -812,5 +899,10 @@ figcaption::before {
 }
 .video + figcaption {
   margin-top: -1em;
+}
+
+main blockquote span {
+  color: #000;
+  display: block;
 }
 
