@@ -373,7 +373,7 @@ main h3:first-child {
 
 main h1 {
   font-family: var(--fontheading);
-  font-size: 4em;
+  font-size: 2.5em;
   line-height: var(--lineheightheading);
   max-width: var(--maxwidth);
   text-align: center;
@@ -419,6 +419,10 @@ main h4 {
   text-align: center;
   max-width: var(--maxwidth);
 
+}
+main strong {
+  font-family: var(--fontheading);
+  font-feature-settings: "ss05";
 }
 
 main figure {
