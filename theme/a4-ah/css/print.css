@@ -50,7 +50,7 @@
   /* ------------------------------------------------------------------------ Variables */
   :root {
     --bigsize: 60px;
-    --basesize: 12px;
+    --basesize: 14px;
     --smallsize: 10px;
     --color: rgba(0, 0, 0, 0.85);
     --spacer: .5cm;
@@ -87,7 +87,8 @@
   #nav {
     page: sommaire;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
+    border: 0;
     break-before: always; 
     break-after: always;
     grid-template-columns: 1fr;
