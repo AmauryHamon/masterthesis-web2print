@@ -185,7 +185,7 @@ hr{
 #nav {
   min-height: 100vh;
   display: grid;
-  grid-template-columns: min-content;
+  /* grid-template-columns: min-content; */
   grid-gap: var(--spacer);
   column-gap: 0;
   padding: var(--spacer);
@@ -196,10 +196,10 @@ hr{
 
 #nav h2,
 #nav ul {
-  columns: 2;
-  -webkit-columns: 2;
-  -moz-columns: 2;
-  grid-column: 2;
+  columns: 1;
+  -webkit-columns: 1;
+  -moz-columns: 1;
+  grid-column: 1;
   margin: 0;
   font-size: 1em;
   font-family: var(--fontheading);
