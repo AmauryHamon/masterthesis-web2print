@@ -2,26 +2,27 @@
 ### Configuration 
 
 # Le thème à utiliser
-theme: "a4-ah"
+theme: "a4-ah-rv"
 
 # Le titre du document
-title: Pass&nbsp;the Information, <wbr> Extend the&nbsp;Knowledge # &nbsp; = espace insécable, <br class="breakprint"> produit un saut uniquement en version print
+title: Pass&nbsp;the Information, <wbr> Extend the Knowledge # &nbsp; = espace insécable, <br class="breakprint"> produit un saut uniquement en version print
 
 # Le sous-titre éventuel du document
-subtitle: "Online Ways of Knowledge Gathering in Creative Practices"
+subtitle: "Gathering and Sharing Online in Creative Practices"
 
 # Votre nom
 name: Amaury Hamon
 student: 
   name: Amaury Hamon
-  thesis: Master Thesis
+  thesis: MA Thesis
   link: https://amauryhamon.com/
 
 tuteur: 
   name: Anthony Masure
   link: https://www.anthonymasure.com/
 # L’année, par ex. : 2021 – 2022
-year: 2023 – 2024 
+year: 2023–24
+www: thesis.amauryhamon.com 
 
 # Votre diplôme, par ex. : DNA Design
 diploma: Master Media Design
@@ -39,7 +40,7 @@ ecole:
 pole: 
 
 # Le nom du fichier pdf généré, par ex. : titre-du-document--prenom-nom.pdf
-pdf: "browsing-gathering-contextualizing--amaury-hamon"
+pdf: "MA-Thesis-Amaury-Hamon"
 
 # Structure du contenu (= sommaire)
 parts:
@@ -53,25 +54,25 @@ parts:
     # pad: https://mypads2.framapad.org/p/introduction-vw1lrt9tb
     template: default
   
-  - title: Gathering as a radical creative process 
+  - title: Gathering
     file: content/text/2.part1.md
     # pad: https://mypads2.framapad.org/p/part-1-m41m9t9wu
     template: default
    
-  - title: Sharing is caring, a critical collaborative design posture
+  - title: Sharing or Gatekeeping?
     file: content/text/3.part2.md
     # pad: https://mypads2.framapad.org/p/part-2-6a1mat9bx
     template: default
    
-  - title: The Case of Are.na
+  - title: Are.na, What type of digital garden?
     file: content/text/4.part3.md
     # pad: https://mypads2.framapad.org/p/part-3-ke1mbt9me
     template: default
 
-  - title: Beyond the Cozy Web, Digital Gardens
-    file: content/text/4.part4.md
-    # pad: https://mypads2.framapad.org/p/part-3-ke1mbt9me
-    template: default
+  # - title: Beyond the Cozy Web, Digital Gardens
+  #   file: content/text/4.part4.md
+  #   # pad: https://mypads2.framapad.org/p/part-3-ke1mbt9me
+  #   template: default
    
   - title: Conclusion
     file: content/text/5.conclusion.md
@@ -157,10 +158,10 @@ parts:
   #   file: content/text/7.1.entretiens.md
   #   template: interview
 
-  # - title: Glossary
-  #   file: content/text/8.glossaire.md
-  #   # pad: https://mypads2.framapad.org/p/glossary-5x1mdt9ff
-  #   template: references
+  - title: Glossary
+    file: content/text/8.glossaire.md
+    # pad: https://mypads2.framapad.org/p/glossary-5x1mdt9ff
+    template: references
    
   - title: References
     file: content/text/9.references.md
