@@ -37,7 +37,7 @@
         </div>
         
         <!-- l’année YYYY – YYYY  -->
-        <div class="meta-year">Read online <br> <a href="<?=$www?>"><?=$www?></a></div>
+        <div class="meta-year">Read the Thesis online! <br> <a href="<?=$www?>"><?=$www?></a></div>
     </div>
 
     <!-- les liens rapides: lire, imprimmer, télécharger -->

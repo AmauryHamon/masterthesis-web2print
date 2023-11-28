@@ -123,6 +123,7 @@
     /* margin-top: 2rem; */
     position: absolute;
     bottom: 0;
+    font-size: .75rem!important;
   }
 
   /* header nav = Lire / imprimer / télécharger */
@@ -167,6 +168,8 @@
     position: running(titleRunning);
     gap:var(--spacer);
     font-family: var(--fontfamily);
+    font-size: .75rem!important;
+    text-transform: uppercase;
   }
   .runningtitle > * {
     flex: 1;
@@ -212,6 +215,11 @@
   .pagedjs_left_page .pagedjs_margin-content > .runningtitle {
     flex-direction: row-reverse;
   }
+.pagedjs_left_page .default figure.full {
+  margin-right: calc(-1* (var(--pagedjs-margin-right) - var(--pagedjs-margin-left)));
+    max-width: none;
+    margin-left: unset;
+}
 
   
   /* ------------------------------------------------------------------------ Content */
@@ -219,6 +227,41 @@
   main { 
     display: block;
     padding: 0;
+  }
+  main figure img {
+    border-radius: 0;
+  }
+  main h1 {
+    margin-left: calc(-1 * (var(--pagedjs-margin-left) - var(--pagedjs-margin-right)));
+    max-width: none;
+    padding: 6rem 6rem;
+  }
+  main h2 {
+    margin-left: calc(-1 * (var(--pagedjs-margin-left) - var(--pagedjs-margin-right)));
+    max-width: none;
+    text-align: center;
+    padding: 3rem 6rem;
+  }
+  main blockquote {
+    margin-left: calc(-1 * (var(--pagedjs-margin-left) - var(--pagedjs-margin-right)));
+    max-width: none;
+    break-inside: avoid;
+  }
+  
+  .pagedjs_left_page main h1 {
+    margin-right: calc(-1* (var(--pagedjs-margin-right) - var(--pagedjs-margin-left)));
+      max-width: none;
+      margin-left: unset;
+  }
+  .pagedjs_left_page main h2 {
+    margin-right: calc(-1* (var(--pagedjs-margin-right) - var(--pagedjs-margin-left)));
+      max-width: none;
+      margin-left: unset;
+  }
+  .pagedjs_left_page main blockquote {
+    margin-right: calc(-1* (var(--pagedjs-margin-right) - var(--pagedjs-margin-left)));
+      max-width: none;
+      margin-left: unset;
   }
   main h2 {
     margin-top: 0;
@@ -230,9 +273,7 @@
   main h4 {
     font-size: var(--basesize);
   }
-  /* section br~blockquote:first-child {
-    margin-top: 0;
-  } */
+  
   h1 {margin-top: 0;}
   .default p {
     /* minimum deux lignes présentes sur la page, au début ou à la fin d’un paragraphe */
@@ -261,14 +302,23 @@
     max-width: none;
   }  
   figcaption {
-    font-size: var(--smallsize);
+    font-size: .75rem!important;
   }
   figure.videofigure::after{
     display: block;
     content: "→ " attr(data-src);
-    font-size: var(--smallsize);
+    font-size: .75rem!important;
     color: var(--accentcolor);
   }
+  figure.videofigure:first-child {
+    margin-top: 0;
+}
+figure.videofigure:first-child .video {
+  margin-top: 0;
+}
+main figure:first-child{
+  margin-top: 0;
+}
   .video[style]{
     background: var(--poster);
     background-size: cover;
@@ -299,7 +349,9 @@
     position: absolute;
     text-align-last: initial;
   }
-
+  .note-call_imagenote{
+    padding-left: 0;
+  }
   .imagenote_wrapper.printright {
     padding-left: calc(1cm + 1.625cm);
   }
@@ -330,6 +382,9 @@
     margin: 0;
     font-size: var(--smallsize);
   }
+  .imagenote.small img {
+    width: 125px;
+  }
   .imagenote > * {
     display: block;
   }
@@ -339,12 +394,19 @@
     font-weight: normal;
     color: var(--accentcolor);
     font-size: var(--smallsize);
+    font-family: var(--fontfamily);
+    font-feature-settings: "ss02";
   }
-  .note-call_imagenote { padding-left: 0.25em;}
+  .note-marker_imagenote{
+    position: relative;
+    /* left: -1.5rem; */
+}
+  
+  /* .note-call_imagenote { padding-left: 0.25em;} */
   .pagedjs_right_page .imagenote_wrapper{
     width: var(--pagedjs-margin-left) !important;
     /* left: calc(0 - var(--pagedjs-margin-left)) !important; */
-    right: var(--maxwidth) !important);
+    right: var(--maxwidth) !important;
     padding: 0 var(--spacer) 0 1cm!important;;    
 
 
@@ -396,10 +458,13 @@
   }
 
   ::footnote-marker {
-    content: counter(footnote-marker) ". ";
+    content: counter(footnote-marker, decimal-leading-zero) ". ";
     font-weight: bold;
     color: var(--accentcolor);
 
+  }
+  [data-footnote-marker]:not([data-split-from]) {
+    list-style-position: outside;
   }
   [data-footnote-marker]::marker {
     font-family: var(--fontfamily);
@@ -419,9 +484,10 @@
   }
 
   .pagedjs_footnote_inner_content {
-    font-size: var(--smallsize);
+    font-size: .75rem!important;
     margin-top: 1em;
     font-family: var(--font-family);
+    padding-left: 29px;
 
   }
 
@@ -524,12 +590,12 @@
   }
 
   #list-toc-generated .toc-element a::before {
-    content: target-counter(attr(href), page);
+    content: target-counter(attr(href), page, decimal-leading-zero);
     position: absolute;
     left: 0;
     margin-left: calc(-3.5em - 20px);
     text-align: right;
-    width: 2em;
+    width: 3em;
   }
   #list-toc-generated .toc-element {
     line-height: 0.9;
@@ -571,4 +637,11 @@
   figcaption::before{
     margin-left: -15px;
   }
+  .default blockquote:first-child {
+    margin-top: 0;
+  }
+  .breakpage+blockquote {
+    margin-top: 0;
+    margin-block-start: 0;
+  } 
 }
