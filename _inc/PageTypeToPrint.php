@@ -193,7 +193,7 @@
     // Fix typography with JoliTypo Fixer
     // Documentation : https://github.com/jolicode/JoliTypo
     $fixer = new Fixer(array('Ellipsis', 'Dash', 'SmartQuotes', 'CurlyQuote', 'FrenchNoBreakSpace'));
-    $fixer->setLocale('fr_FR');
+    $fixer->setLocale('en_EN');
     $html = $fixer->fix($html);
     
     // break long anchor texts

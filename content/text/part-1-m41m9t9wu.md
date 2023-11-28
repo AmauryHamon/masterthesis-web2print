@@ -95,7 +95,7 @@ This written "database" serves as a personal compilation of one's individual cen
 
 
 
-    - To help this endeavor of gathering knowledge, many different applications such as Tumblr, Pinterest, Are.na were born. At the intersection of knowledge networks and social media, those platforms give the possibility to work collaboratively and access each other user's knowledge systems (if public) there considerably improving the speed to discover new inputs.
+    - To help this endeavor of gathering knowledge, many different applications such as Tumblr, Pinterest, <span class="arena">Are.na</span> were born. At the intersection of knowledge networks and social media, those platforms give the possibility to work collaboratively and access each other user's knowledge systems (if public) there considerably improving the speed to discover new inputs.
 
     - As a designer, such processes of research usually take the form of image selections, text notes or technical documentation, in the end serving many different purposes: a visual moodboard to help start a project, convince a client, nurish curiosity, expand one's research. 
 
@@ -107,7 +107,7 @@ This written "database" serves as a personal compilation of one's individual cen
 
 - relevance of the thesis subject now? Today's internet:  
 
-    With the evolution of the world wide web from its hypertext origins to a more social web, access to knowledge and means to develop one's visual culture have significantly improved, yet the more content is available, the more chance there is to get lost in information overload. Digital gardening and using open-ended tools like are.na extends an opportunity for creatives to nurture a more open \& collaborative process, encouraging an alternative to streams of monetised data.
+    With the evolution of the world wide web from its hypertext origins to a more social web, access to knowledge and means to develop one's visual culture have significantly improved, yet the more content is available, the more chance there is to get lost in information overload. Digital gardening and using open-ended tools like <span class="arena">Are.na</span> extends an opportunity for creatives to nurture a more open \& collaborative process, encouraging an alternative to streams of monetised data.
 
     
 
@@ -147,7 +147,7 @@ This written "database" serves as a personal compilation of one's individual cen
 
 - list varied forms, (social media platforms, cloud-based document sharing, and collaborative coding repositories…) 
 
-- Those online tools are of all sorts: social medias (Instagram, X), blogs (Tumblr), image classifiers (Pinterest, Are.na), notepads (Obsidian, Notes, Notion), stylesheets (Google Sheet).
+- Those online tools are of all sorts: social medias (Instagram, X), blogs (Tumblr), image classifiers (Pinterest, <span class="arena">Are.na</span>), notepads (Obsidian, Notes, Notion), stylesheets (Google Sheet).
 
 - those tools are central to the creative processes being studied: In their endeavor of collecting, organizing and showing corpus of references, for personal curation, client meetings, pedagogical approaches or else,
 

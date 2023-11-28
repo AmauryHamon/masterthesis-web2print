@@ -51,7 +51,7 @@ Florian Hilt
 
 
 
-> The tricky part is that it only speaks to me, it's a lot about feeling. If I show my Are.na blocks to someone else, for example, it's a bit sensitive.
+> The tricky part is that it only speaks to me, it's a lot about feeling. If I show my <span class="arena">Are.na</span> blocks to someone else, for example, it's a bit sensitive.
 
 Florian Hilt
 
@@ -63,7 +63,7 @@ Florian Hilt
 
 
 
-> If I started having a public Are.na, where I collaborate with people, it would be at some point when I have a shared studio.
+> If I started having a public <span class="arena">Are.na</span>, where I collaborate with people, it would be at some point when I have a shared studio.
 
 Florian Hilt
 
@@ -99,7 +99,7 @@ Aurélie Vial
 
 
 
-> I don't know if it's a personal choice or if it just happened, but I'm not at all a participative person, I don't have social networks. Except Are.na, where sometimes I add things. I don't just take blocks, part of what I add is images I've taken from sites, from Google, from Pinterest. But I also, and this happens quite often, scan things from books or other sources and add them to Arena. In fact, I feed a bit of content. 
+> I don't know if it's a personal choice or if it just happened, but I'm not at all a participative person, I don't have social networks. Except <span class="arena">Are.na</span>, where sometimes I add things. I don't just take blocks, part of what I add is images I've taken from sites, from Google, from Pinterest. But I also, and this happens quite often, scan things from books or other sources and add them to Arena. In fact, I feed a bit of content. 
 
 Aurélie Vial
 
@@ -159,7 +159,7 @@ Frederik Mahler-Andersen
 
 
 
-> Personally, I like to share what I find. But on platforms like Are.na or others, I'm much more restrictive, and I don't really know why, but I think it's the oral sharing that attracts me more.
+> Personally, I like to share what I find. But on platforms like <span class="arena">Are.na</span> or others, I'm much more restrictive, and I don't really know why, but I think it's the oral sharing that attracts me more.
 
 Frederik Mahler-Andersen
 
@@ -171,7 +171,7 @@ Frederik Mahler-Andersen
 
 
 
-> Are.na, for example, is a small community. There are a lot of people who share a lot of things, with a lot of good will, which is great. But there are also a lot of people who have so many private things, I imagine. It's a bit restrictive. But I think the code is the same, maybe a little more participative.
+> <span class="arena">Are.na</span>, for example, is a small community. There are a lot of people who share a lot of things, with a lot of good will, which is great. But there are also a lot of people who have so many private things, I imagine. It's a bit restrictive. But I think the code is the same, maybe a little more participative.
 
 Frederik Mahler-Andersen
 
@@ -189,13 +189,13 @@ Frederik Mahler-Andersen
 
 
 
-> Are.na is also sometimes the same phenomenon as Instagram, it can be a bit "death scrolling" when you follow too many people. It starts to snowball, and then you lose track a bit.
+> <span class="arena">Are.na</span> is also sometimes the same phenomenon as Instagram, it can be a bit "death scrolling" when you follow too many people. It starts to snowball, and then you lose track a bit.
 
 Frederik Mahler-Andersen
 
 
 
-> For me, as a web designer, when I see too many websites, they're all a bit custom-made. All with graphics that are a bit too much, then I get lost. The people I follow on Are.na, apart from certain artists etc., are a lot of people who do the same thing as me. So you end up in a spiral where you also see their references and make them your own.
+> For me, as a web designer, when I see too many websites, they're all a bit custom-made. All with graphics that are a bit too much, then I get lost. The people I follow on <span class="arena">Are.na</span>, apart from certain artists etc., are a lot of people who do the same thing as me. So you end up in a spiral where you also see their references and make them your own.
 
 Frederik Mahler-Andersen
 
@@ -209,13 +209,13 @@ Frederik Mahler-Andersen
 
 > Books sometimes inspire me more than platforms; I rather use platforms to store references.
 
-Emilie Pillet
+Émilie Pillet
 
 
 
 > I'm going to try to find things in a more organic way, because I have the impression that on these platforms, there are a lot of people reposting and as time goes by, the content becomes very polished and you can't find anything out of the ordinary. 
 
-Emilie Pillet
+Émilie Pillet
 
 
 

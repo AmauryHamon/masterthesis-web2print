@@ -17,7 +17,7 @@
         <!-- Logo ÉSAD Pyrénées -->
         <!-- <img src="/css/logo.png" alt="ESAD Pyrénées"> -->
         <!-- Votre diplôme -->
-        <span class="diploma"><?= $diploma ?></span>
+        <!-- <span class="diploma"></span> -->
     </div>
 
 
