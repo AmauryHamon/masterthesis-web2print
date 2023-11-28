@@ -602,7 +602,7 @@ main blockquote {
   font-style: normal;
   margin-left: 0;
   padding: 1.5em;
-  border: 2px solid var(--accentcolor);
+  border: 1px solid var(--accentcolor);
   color: var(--accentcolor);
   border-radius: 2rem;
   margin-inline-end: 0;
@@ -1294,7 +1294,6 @@ main blockquote span {
   
 }
 .timeline-img {
-  grid-column: 1 / span 12;
   display: none !important;
 }
 .timeline-QR {

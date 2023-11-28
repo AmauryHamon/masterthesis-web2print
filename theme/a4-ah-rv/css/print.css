@@ -253,6 +253,12 @@
       max-width: none;
       margin-left: unset;
   }
+  .pagedjs_references_first_page main h1 {
+    margin-left: 0;
+    margin-right: 0;
+    max-width: var(--maxwidth);
+    padding: 6rem 6rem;
+  }
   .pagedjs_left_page main h2 {
     margin-right: calc(-1* (var(--pagedjs-margin-right) - var(--pagedjs-margin-left)));
       max-width: none;
@@ -624,9 +630,14 @@ main figure:first-child{
   .timeline {
     display: none;
   }
-  .timeline-img{
-    display: block !important;
+  .timeline-img{    display: block !important;
   }
+  .pagedjs_left_page .default figure.timeline-img {
+    margin-right: calc(-1* (var(--pagedjs-margin-right) - var(--pagedjs-margin-left)));
+    max-width: none;
+    margin-left: unset;
+  }
+  
   .term dt {
     font-family: var(--fontfamily);
     font-weight: normal;
