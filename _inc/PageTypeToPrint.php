@@ -144,7 +144,7 @@
 
       // According to template, set the HTML structure of part
       if($template != "default"){
-        $content = "<div class='runningtitle'><div>$part_title</div></div>\n\n$content";
+        $content = "<div class='runningtitle'></div>\n\n$content";
       }
       if($template == "interview"){
         //if interview template has an audio file, add audio player
