@@ -48,7 +48,7 @@
   } 
 
   @page cover {
-    margin: 1cm 1cm 1.2cm 1cm;
+    margin: 1cm 1cm 1.2cm 1.5cm;
     
     @top-left-corner {
       display: none;
@@ -59,19 +59,25 @@
   }
 
   @page sommaire {
-       
+    margin-top: 1cm;
+
+    @top-right{
+      display: none!important;
+    }
+    
   }
+
 
   @page appendices {
     margin: 2.2cm 1cm .8cm 7.5cm;
   }
 
   @page references {
-    margin: 2.4cm 1cm 1.2cm 7.5cm;
+    margin: 1.2cm 1.2cm 1.2cm 7.5cm;
   }
 
   @page interview {
-    margin: 2.4cm 1cm 1.2cm 7.5cm;
+    margin: 2.4cm 1.2cm 1.2cm 7.5cm;
   }
 
   
@@ -184,7 +190,7 @@
     font-family: var(--fontfamily);
   }
   .runningtitle :nth-child(2){
-    font-weight: bold;
+    font-weight: normal;
   }
   /* running folio */
   .runningfolio {
@@ -212,6 +218,12 @@
     display: flex !important;
     align-items: start;
   }
+  [data-ref="c5d51829-02d7-457d-a2b6-dcfed83e4745"] {
+    display: none!important;
+  }
+  .pagedjs_left_page .pagedjs_margin-content > .runningtitle {
+    display: none;
+  }
   .pagedjs_left_page .pagedjs_margin-content > .runningtitle {
     flex-direction: row-reverse;
   }
@@ -221,7 +233,6 @@
     margin-left: unset;
 }
 
-  
   /* ------------------------------------------------------------------------ Content */
   /* contenu */
   main { 
@@ -452,7 +463,7 @@ main figure:first-child{
   section.footnotes { display: none;}
 
   ::footnote-call {
-    font-weight: bold; 
+    font-weight: normal; 
     font-family: var(--fontfamily);
     content: counter(footnote);
     font-variant-position:super;
@@ -466,7 +477,7 @@ main figure:first-child{
 
   ::footnote-marker {
     content: counter(footnote-marker, decimal-leading-zero) ". ";
-    font-weight: bold;
+    font-weight: normal;
     color: var(--accentcolor);
 
   }
