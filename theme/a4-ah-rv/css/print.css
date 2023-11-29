@@ -67,11 +67,11 @@
   }
 
   @page references {
-    margin: 3.2cm 1cm 1.2cm 7.5cm;
+    margin: 2.4cm 1cm 1.2cm 7.5cm;
   }
 
   @page interview {
-    margin: 3.2cm 1cm 1.2cm 7.5cm;
+    margin: 2.4cm 1cm 1.2cm 7.5cm;
   }
 
   
@@ -441,7 +441,8 @@ main figure:first-child{
     color: var(--accentcolor);
 
   }
-  
+  .footnote a {
+    text-underline-offset: 0.12em;  }
   .footnote:has(.breakcolumn) {
     break-inside: auto;
     -webkit-column-break-inside: auto;
@@ -651,8 +652,19 @@ main figure:first-child{
   figcaption{
     padding-left: 14px;
   }
+  
   figcaption::before{
     margin-left: -15px;
+  }
+  .caption em {
+    font-style: normal;
+    font-family: var(--fontfamily);
+  }
+  .caption em::before{
+    content: "\2018";
+  }
+  .caption em::after{
+    content: "\2019";
   }
   .default blockquote:first-child {
     margin-top: 0;
