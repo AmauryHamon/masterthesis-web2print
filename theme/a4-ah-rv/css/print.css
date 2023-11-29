@@ -558,6 +558,12 @@ main figure:first-child{
   .references > h2 {
     display: none;
   }
+  .references strong {
+      font-family: var(--fontheadingmed);
+      letter-spacing: 0.02em;
+      font-size: calc(var(--basesize) * 0.85);
+    
+  }
   /* ------------------------------------------------------------------------ Interview */
   .interview {
     page: interview;
