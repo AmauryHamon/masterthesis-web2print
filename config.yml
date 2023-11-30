@@ -40,7 +40,7 @@ ecole:
 pole: 
 
 # Le nom du fichier pdf généré, par ex. : titre-du-document--prenom-nom.pdf
-pdf: "MA-Thesis-Amaury-Hamon"
+pdf: "AMAURY-HAMON-PassTheInformationExtendTheKnowledge.pdf"
 
 # Structure du contenu (= sommaire)
 parts:

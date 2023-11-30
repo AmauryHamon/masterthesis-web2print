@@ -45,9 +45,9 @@
     <nav id="quicklinks">
         <a href="#nav">Read online</a>
         <!-- supprimer ce lien une fois le PDF généré : -->
-        <a href="?print" title="Web to print">Print A4</a>
+        <!-- <a href="?print" title="Web to print">Print A4</a> -->
         <!-- Modifier l’URL dans config.php -->
-        <a href="<?= $pdf ?>">Download</a>
+        <a href="<?= $pdf ?>">Download as A4</a>
         <a href="https://github.com/AmauryHamon/masterthesis-web2print/issues" target="_blank">Edit</a>
     </nav>
 </header>
