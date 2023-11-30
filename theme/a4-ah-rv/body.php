@@ -1,6 +1,7 @@
 <header id="header">
     <!-- Le titre du mémoire / doc écrit -->
-    <h1><?= $title ?></h1>
+    <h1>Pass&nbsp;the Information</h1>
+    <h1>Extend&nbsp;the Knowledge</h1>
 
     <!-- Le sous-titre éventuel (si pas de sous-titre, supprimer le h2) -->
     <h2><?= $subtitle ?></h2>
