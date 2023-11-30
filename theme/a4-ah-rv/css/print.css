@@ -22,7 +22,7 @@
     }
   } 
   @page:right {
-    margin: 2.4cm 1cm 1.2cm 7.5cm;
+    margin: 2.4cm 1cm 1.7cm 7.5cm;
     /* @top-right-corner {
       content: element(folioRunning);
       text-align: right;
@@ -66,6 +66,7 @@
     }
     
   }
+  
 
 
   @page appendices {
@@ -80,7 +81,14 @@
     margin: 2.4cm 1.2cm 1.2cm 7.5cm;
   }
 
-  
+  @page thanks {
+    margin: 1.2cm 1.2cm 1.2cm 7.5cm;
+
+    @top-right{
+      display: none!important;
+    }
+    
+  }
 
   /* ------------------------------------------------------------------------ Variables */
   :root {
@@ -115,12 +123,23 @@
     min-height: 0; */
   }
   #header h1 {
-    font-size: 6.8rem;
+    font-size: 5rem;
     margin: 0;
+    text-align: center;
+    border-radius: 5em;
+    padding: 1em 0;
+    font-feature-settings: "ss05";
+    background-color: var(--accentcolor);
+    color: black;
+
   }
   #header h2 {
-    font-size: 2.5rem;
+    font-size: 2rem;
     color: black;
+    text-align: center;
+    border-radius: 5em;
+    padding: 3.2em 0;
+    border: 3px solid var(--accentcolor);;
   }
   .meta {
     display: grid;
