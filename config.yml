@@ -8,7 +8,7 @@ theme: "a4-ah-rv"
 title: Pass&nbsp;the Information, <wbr> Extend the Knowledge # &nbsp; = espace insécable, <br class="breakprint"> produit un saut uniquement en version print
 
 # Le sous-titre éventuel du document
-subtitle: "Gathering and Sharing Online in Creative Practices"
+subtitle: "Gathering and Sharing Online in&nbsp;Creative Practices"
 
 # Votre nom
 name: Amaury Hamon
@@ -171,7 +171,7 @@ parts:
   - title: Acknowledgements
     file: content/text/10.remerciements.md
     # pad: https://mypads2.framapad.org/p/acknowledgements-r31mgt92o
-    template: thanks
+    template: references
 
   - title: Impressum
     file: content/text/11.impressum.md
