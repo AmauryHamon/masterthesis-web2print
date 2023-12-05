@@ -150,6 +150,9 @@
     bottom: 0;
     font-size: .75rem!important;
   }
+  .meta-year {
+    display: block!important;
+  }
 
   /* header nav = Lire / imprimer / télécharger */
   #header nav { display: none; } 

@@ -228,7 +228,9 @@ hr {
   grid-template-columns: 15vw minmax(250px, 1fr) minmax(250px, 1fr);
   margin-top: 2rem;
 }
-
+.meta-year {
+  display: none!important;
+}
 #quicklinks {
   position: absolute;
   bottom: var(--spacer);
